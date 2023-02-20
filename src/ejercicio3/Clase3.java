@@ -1,5 +1,6 @@
 package ejercicio3;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Clase3 {
@@ -8,8 +9,14 @@ public class Clase3 {
         int opcion;
         boolean repetir = true;
         StringBuilder cadena = new StringBuilder();
-        char [] abecedario = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ñ',
-                                'O','P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+        char [] abecedario = new char[26];
+        char inicial = 'A';
+
+        for(int i = 0; i < abecedario.length; i++){
+            abecedario[i] = inicial;
+            inicial++;
+        }
+        System.out.println(Arrays.toString(abecedario));
 
 
 
@@ -21,20 +28,20 @@ public class Clase3 {
             if(opcion == -1){
                 repetir = false;
             }
-            if(opcion >= 0 && opcion < 27){
+            if(opcion >= 0 && opcion < 26){
                 for (int i = 0; i < abecedario.length; i++){
                     if(i == opcion){
                         cadena.append(abecedario[opcion]);
                     }
                 }
-                System.out.println("Posicion añadidad");
+                System.out.println("Añadirá la " + abecedario[opcion]);
             }
             else{
                 System.out.println("Introduce una posicion valida");
             }
 
         }
-        System.out.println("Cadena resultante " + cadena);
+        System.out.println("Cadena resultante : " + cadena);
 
     }
 }
