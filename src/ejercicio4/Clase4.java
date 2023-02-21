@@ -6,6 +6,10 @@ import java.util.Scanner;
 
 public class Clase4 {
     public static void main(String[] args) {
+        System.out.println("Hola");
+        System.out.println("Adios");
+
+
         Scanner sc = new Scanner(System.in);
         Random rd = new Random();
         int numeroPosArray;
