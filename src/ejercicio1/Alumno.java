@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class Alumno {
     private static final float[] NOTASALUMNOS = new float[10];
     private static final String[] NOMBRESALUMNOS = new String[10];
+    private static final Notas[] VALORNOTAS = new Notas[10];
     private String nombre;
     private float nota;
     private Notas valorNota;
@@ -52,6 +53,9 @@ public class Alumno {
 
     public static String getNombresAlumnos() {
         return Arrays.toString(NOMBRESALUMNOS);
+    }
+    public static String getValoresNotas(){
+        return Arrays.toString(VALORNOTAS);
     }
 
     public void setNombre(String nombre) {
@@ -116,6 +120,32 @@ public class Alumno {
                     NOMBRESALUMNOS[8] = nombre;
                 case 9:
                     NOMBRESALUMNOS[9] = nombre;
+            }
+        }
+    }
+    public static void rellenarArrayEnum(int pos, Notas nota){
+        for(int i = 0; i < VALORNOTAS.length; i++){
+            switch (pos) {
+                case 0:
+                    VALORNOTAS[0] = nota;
+                case 1:
+                    VALORNOTAS[1] = nota;
+                case 2:
+                    VALORNOTAS[2] = nota;
+                case 3:
+                    VALORNOTAS[3] = nota;
+                case 4:
+                    VALORNOTAS[4] = nota;
+                case 5:
+                    VALORNOTAS[5] = nota;
+                case 6:
+                    VALORNOTAS[6] = nota;
+                case 7:
+                    VALORNOTAS[7] = nota;
+                case 8:
+                    VALORNOTAS[8] = nota;
+                case 9:
+                    VALORNOTAS[9] = nota;
             }
         }
     }
