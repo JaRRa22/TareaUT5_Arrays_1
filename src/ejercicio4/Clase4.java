@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class Clase4 {
     public static void main(String[] args) {
-        System.out.println("Hola");
-        System.out.println("Adios");
+        System.out.println("Nueva");
+        System.out.println("Vieja");
 
 
         Scanner sc = new Scanner(System.in);
