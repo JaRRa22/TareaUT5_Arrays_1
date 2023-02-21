@@ -2,7 +2,7 @@ package ejercicio6;
 
 import java.util.Arrays;
 
-public class Ejercicio6 {
+public class Clase6 {
     public static void main(String[] args) {
         int pos = 4;
         int posInversa = 0;
