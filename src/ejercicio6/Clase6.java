@@ -16,15 +16,12 @@ public class Clase6 {
                         arrayInverso[posInversa] = array[i];
                         break;
                     }
-
                 }
                 posInversa++;
                 pos--;
             }
-
         }
         System.out.println(Arrays.toString(array));
         System.out.println(Arrays.toString(arrayInverso));
-
     }
 }
